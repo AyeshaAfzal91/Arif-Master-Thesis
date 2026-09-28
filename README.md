@@ -6,6 +6,7 @@
 - Student Email
   -- FAU: mehmet.a.bagc@fau.de
   -- Gmail: arif.bagci71@gmail.com
+  -- GitHub: https://github.com/mrfbgc
 - Thesis listed on website ⇒ TODO (Thesis Initial title: “??”?
 - GitHub access ⇒ TODO 
 - Student listed on mailing list: hpcplus@fau.de ⇒ NEED to RECHECK 
