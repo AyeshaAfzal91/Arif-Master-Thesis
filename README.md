@@ -77,5 +77,3 @@ Visualizations where appropriate (energy vs. sequence length, throughput vs. bat
 Assumptions and limitations
 
 For the analysis, what I want to see is your interpretation of the results: what the trends mean, where the crossover is, whether it matches the theoretical expectation, and why or why not. Plots without discussion are not sufficient to demonstrate your understanding of the core trade-offs.
-
-## Starting Task
