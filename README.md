@@ -8,8 +8,8 @@
   -- Gmail: arif.bagci71@gmail.com
   -- GitHub: https://github.com/mrfbgc
 - Thesis listed on website ⇒ TODO (Thesis Initial title: “??”?
-- GitHub access ⇒ TODO 
-- Student listed on mailing list: hpcplus@fau.de ⇒ NEED to RECHECK 
+- GitHub access ⇒ Done 
+- Student listed on mailing list: hpcplus@fau.de ⇒ Done 
 - Thesis duration: Nov – April (flexible) ??
 - Thesis Requirements: Two talks and a comprehensive written thesis
 - Thesis Registration: Nov (flexible)??
@@ -23,21 +23,19 @@ ssh -Y ihpc171h@alex.nhr.fau.de
   -- Helma (TODO)
 Arif filled the form and I’ll inform the admin ⇒ TODO
 - Matrix Room for chat: Please set up an account at matrix.org (should look something like “@m.mouse:matrix.org”) and send it to me! => @mrfbgc:matrix.org ⇒ Done 
-- Thesis Context
+- Thesis Context (Integration into Wattlytics)
   -- Hardware: H100/H200 Helma or Testcluster GPUs
   -- Applications (compute-bound and/or memory-bound)
-Three LLMs (focus on dense)
+--- Three LLMs (focus on dense)
 Mamba2 hybrid (state space models)
 https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 MLA (multi-head-latent attention from deepseek)
 TransMLA this model: https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Depth-Base 
 GQA (group query attention)
 https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Depth-Base 
-
-AI benchmarks from computer vision
+--- AI benchmarks from computer vision
 FLUX1 dev: https://huggingface.co/black-forest-labs/FLUX.1-dev 
 ResNet-50: https://huggingface.co/microsoft/resnet-50 
-  -- Integration into Wattlytics 
 
 
 ## Starting Task
