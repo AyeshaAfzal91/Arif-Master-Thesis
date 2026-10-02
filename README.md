@@ -15,7 +15,7 @@
 - Thesis Registration: Nov (flexible)??
 - First talk: Nov/Dec (flexible)??
 - Second talk/Thesis: End-April (flexible)??
-- Weekly meetings dates (THU, 10 a.m.): calendar invite set-up ⇒ TODO 
+- Weekly meetings dates (THU, 10 a.m.): calendar invite set-up DONE 
 - Access to HPC systems at NHR@FAU
   -- Alex (Done)
 https://portal.hpc.fau.de 
