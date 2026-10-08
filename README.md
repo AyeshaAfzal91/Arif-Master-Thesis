@@ -36,7 +36,14 @@ https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Depth-Base
 --- AI benchmarks from computer vision
 FLUX1 dev: https://huggingface.co/black-forest-labs/FLUX.1-dev 
 ResNet-50: https://huggingface.co/microsoft/resnet-50 
-
+- Reference papers (running knobs: freq scaling and power capping)
+-- LLM: https://arxiv.org/abs/2605.11999
+  --- Hardware: NVIDIA H200
+  --- LLM models: GQA, MLA, Gated DeltaNet, and Mamba2)
+-- AI: https://arxiv.org/abs/2603.16164
+  --- NVIDIA H100, NVIDIA H200, and AMD MI300X GPUs
+  --- AI model: a benchmarking framework with popular deep learning applications from computer vision (image classification and generation) and large language models (continued pre-training and inference) implementing modern methods.
+-- Experimental setting general: always use the updated software version available.  
 
 ## Starting Task
 Please complete a jump-start task focused on GPU energy profiling and performance analysis of LLM inference workloads.
