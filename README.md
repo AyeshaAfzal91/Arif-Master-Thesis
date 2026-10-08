@@ -1,49 +1,80 @@
-## Administrative tasks
-- GitHub: https://github.com/AyeshaAfzal91/Arif-Master-Thesis/tree/main 
-  -- Move all results of Starting-task in “Starting-task” folder
-  -- Document “summary of changes” for each “existing task“ or “summary of steps” for each “new task” in “README”
-  -- Always commit current results at Github
-- Student Email
-  -- FAU: mehmet.a.bagc@fau.de
-  -- Gmail: arif.bagci71@gmail.com
-  -- GitHub: https://github.com/mrfbgc
-- Thesis listed on website ⇒ TODO (Thesis Initial title: “??”?
-- GitHub access ⇒ Done 
-- Student listed on mailing list: hpcplus@fau.de ⇒ Done 
-- Thesis duration: Nov – April (flexible) ??
-- Thesis Requirements: Two talks and a comprehensive written thesis
-- Thesis Registration: Nov (flexible)??
-- First talk: Nov/Dec (flexible)??
-- Second talk/Thesis: End-April (flexible)??
-- Weekly meetings dates (THU, 10 a.m.): calendar invite set-up DONE 
-- Access to HPC systems at NHR@FAU
-  -- Alex (Done)
-https://portal.hpc.fau.de 
-ssh -Y ihpc171h@alex.nhr.fau.de
-  -- Helma (TODO)
-Arif filled the form and I’ll inform the admin ⇒ TODO
-- Matrix Room for chat: Please set up an account at matrix.org (should look something like “@m.mouse:matrix.org”) and send it to me! => @mrfbgc:matrix.org ⇒ Done 
-- Thesis Context (Integration into Wattlytics)
-  -- Hardware: H100/H200 Helma or Testcluster GPUs
-  -- Applications (compute-bound and/or memory-bound)
---- Three LLMs (focus on dense)
-Mamba2 hybrid (state space models)
-https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
-MLA (multi-head-latent attention from deepseek)
-TransMLA this model: https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Depth-Base 
-GQA (group query attention)
-https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Depth-Base 
---- AI benchmarks from computer vision
-FLUX1 dev: https://huggingface.co/black-forest-labs/FLUX.1-dev 
-ResNet-50: https://huggingface.co/microsoft/resnet-50 
-- Reference papers (running knobs: freq scaling and power capping)
--- LLM: https://arxiv.org/abs/2605.11999
-  --- Hardware: NVIDIA H200
-  --- LLM models: GQA, MLA, Gated DeltaNet, and Mamba2)
--- AI: https://arxiv.org/abs/2603.16164
-  --- NVIDIA H100, NVIDIA H200, and AMD MI300X GPUs
-  --- AI model: a benchmarking framework with popular deep learning applications from computer vision (image classification and generation) and large language models (continued pre-training and inference) implementing modern methods.
--- Experimental setting general: always use the updated software version available.  
+## Administrative Tasks
+
+### GitHub
+**Repository:** https://github.com/AyeshaAfzal91/Arif-Master-Thesis/tree/main
+
+- Move all results of Starting-task in **“Starting-task”** folder
+- Document **“summary of changes”** for each **“existing task”** or **“summary of steps”** for each **“new task”** in **“README”**
+- Always commit current results at GitHub
+
+### Student Email
+| Account | Address |
+|---------|---------|
+| FAU     | mehmet.a.bagc@fau.de |
+| Gmail   | arif.bagci71@gmail.com |
+| GitHub  | https://github.com/mrfbgc |
+
+### Status Overview
+| Item | Status |
+|------|--------|
+| Thesis listed on website | ⇒ TODO (Thesis Initial title: “??”?) |
+| GitHub access | ⇒ Done |
+| Student listed on mailing list: hpcplus@fau.de | ⇒ Done |
+| Weekly meetings dates (THU, 10 a.m.): calendar invite set-up | DONE |
+| Matrix Room for chat | ⇒ Done |
+
+### Thesis Timeline
+- **Thesis duration:** Nov – April (flexible) ??
+- **Thesis Requirements:** Two talks and a comprehensive written thesis
+- **Thesis Registration:** Nov (flexible) ??
+- **First talk:** Nov/Dec (flexible) ??
+- **Second talk/Thesis:** End-April (flexible) ??
+
+### Access to HPC Systems at NHR@FAU
+- **Alex** (Done)
+  - Portal: https://portal.hpc.fau.de
+  - Login:
+```bash
+    ssh -Y ihpc171h@alex.nhr.fau.de
+```
+- **Helma** (TODO)
+  - Arif has H100 access only and I’ll get back on that after discussing with the admin ⇒ TODO
+
+### Matrix Room for Chat
+Please set up an account at matrix.org (should look something like “@m.mouse:matrix.org”) and send it to me!
+⇒ `@mrfbgc:matrix.org` ⇒ Done
+
+---
+
+## Thesis Context (Integration into Wattlytics)
+
+### Hardware
+- H100/H200 Helma or Testcluster GPUs
+
+### Applications (compute-bound and/or memory-bound)
+
+#### Three LLMs (focus on dense)
+1. **Mamba2 hybrid** (state space models)
+   - https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
+2. **MLA** (multi-head-latent attention from deepseek)
+   - TransMLA this model: https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Depth-Base
+3. **GQA** (group query attention)
+   - https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Depth-Base
+
+#### AI Benchmarks from Computer Vision
+- **FLUX1 dev:** https://huggingface.co/black-forest-labs/FLUX.1-dev
+- **ResNet-50:** https://huggingface.co/microsoft/resnet-50
+
+### Reference Papers (running knobs: freq scaling and power capping)
+- **LLM:** https://arxiv.org/abs/2605.11999
+  - Hardware: NVIDIA H200
+  - LLM models: GQA, MLA, Gated DeltaNet, and Mamba2
+- **AI:** https://arxiv.org/abs/2603.16164
+  - Hardware: NVIDIA H100, NVIDIA H200, and AMD MI300X GPUs
+  - AI model: a benchmarking framework with popular deep learning applications from computer vision (image classification and generation) and large language models (continued pre-training and inference) implementing modern methods.
+
+### Experimental Setting (General)
+- Always use the updated software version available.  
 
 ## Starting Task
 Please complete a jump-start task focused on GPU energy profiling and performance analysis of LLM inference workloads.
