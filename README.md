@@ -33,10 +33,7 @@
 ### Access to HPC Systems at NHR@FAU
 - **Alex** (Done)
   - Portal: https://portal.hpc.fau.de
-  - Login:
-```bash
-    ssh -Y ihpc171h@alex.nhr.fau.de
-```
+  - Login: ssh -Y ihpc171h@alex.nhr.fau.de
 - **Helma** (TODO)
   - Arif has H100 access only and I’ll get back on that after discussing with the admin ⇒ TODO
 
