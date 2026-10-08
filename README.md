@@ -17,11 +17,11 @@
 ### Status Overview
 | Item | Status |
 |------|--------|
-| Thesis listed on website | ⇒ TODO (Thesis Initial title: “??”?) |
-| GitHub access | ⇒ Done |
-| Student listed on mailing list: hpcplus@fau.de | ⇒ Done |
+| Thesis listed on website | TODO (Thesis Initial title: “??”?) |
+| GitHub access |Done |
+| Student listed on mailing list: hpcplus@fau.de | Done |
 | Weekly meetings dates (THU, 10 a.m.): calendar invite set-up | DONE |
-| Matrix Room for chat | ⇒ Done |
+| Matrix Room for chat | Done |
 
 ### Thesis Timeline
 - **Thesis duration:** Nov – April (flexible) ??
