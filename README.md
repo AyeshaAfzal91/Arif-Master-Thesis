@@ -1,5 +1,5 @@
 ## Administrative tasks
-- GitHub: [https://github.com/AyeshaAfzal91/LLM-AI-Energy-SweetSpot-Study](https://github.com/AyeshaAfzal91/Arif-Master-Thesis)
+- GitHub: https://github.com/AyeshaAfzal91/Arif-Master-Thesis/tree/main 
   -- Move all results of Starting-task in “Starting-task” folder
   -- Document “summary of changes” for each “existing task“ or “summary of steps” for each “new task” in “README”
   -- Always commit current results at Github
