@@ -17,7 +17,7 @@
 ### Status Overview
 | Item | Status |
 |------|--------|
-| Thesis listed on website | TODO (Thesis Initial title: “??”?) |
+| Thesis listed on website | TODO (Thesis Initial title: “Energy Efficiency of LLMs and AI Pipelines for Wattlytics Integration”?) |
 | GitHub access |DONE |
 | Student listed on mailing list: hpcplus@fau.de | DONE |
 | Weekly meetings dates (THU, 10 a.m.): calendar invite set-up | DONE |
@@ -35,7 +35,7 @@
   - Portal: https://portal.hpc.fau.de
   - Login: ssh -Y ihpc171h@alex.nhr.fau.de
 - **Helma** (TODO)
-  - Arif has H100 access only and I’ll get back on that after discussing with the admin ⇒ TODO
+  - Arif has H100 access only  ⇒ TODO, I’ll get back on that after discussing with the admin
 
 ### Matrix Room for Chat
 Please set up an account at matrix.org (should look something like “@m.mouse:matrix.org”) and send it to me!
