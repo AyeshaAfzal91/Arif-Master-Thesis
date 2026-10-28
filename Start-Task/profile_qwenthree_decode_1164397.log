@@ -1,0 +1,46 @@
+### Starting TaskPrologue of job 1164397 on h24-09 at Wed Oct 28 12:54:41 PM CET 2026
+Running on cores 96-127 with governor ondemand
+Wed Oct 28 12:54:41 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H200                    On  |   00000000:C6:00.0 Off |                    0 |
+| N/A   37C    P0             76W /  600W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+==ERROR== The application returned an error code (1).
+=== JOB_STATISTICS ===
+=== current date     : Wed Oct 28 12:55:13 CET 2026
+= Job-ID             : 1164397 on helma
+= Job-Name           : profile_decode_qwenthree
+= Job-Command        : /home/hpc/ihpc/ihpc170h/Arif-Master-Thesis/Start-Task/profile_decode_qwenthree.sh
+= Initial workdir    : /home/hpc/ihpc/ihpc170h/Arif-Master-Thesis/Start-Task
+= Queue/Partition    : preempt
+= Slurm account      : ihpc with QOS=normal
+= Requested resources: cpu=32,mem=175G,node=1,billing=32,gres/gpu=1,gres/gpu:h200=1 for 10:00:00
+= Elapsed runtime    : 00:00:51
+= Total RAM usage    : 1.4 GiB of assigned 175 GiB (0.8%)
+= Node list          : h24-09
+= Subm/Elig/Start/End: 2026-10-28T12:33:11 / 2026-10-28T12:33:11 / 2026-10-28T12:54:22 / 2026-10-28T12:55:13
+======================
+=== Quota infos ======
+    Path                 Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc              31.5G   104.9G   209.7G        N/A  37,462      300K     400K        N/A    
+!!! /hnvme                 51.0G     0.0K     0.0K        N/A      79K      61K      81K        N/A !!!
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

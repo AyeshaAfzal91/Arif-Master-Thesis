@@ -33,6 +33,9 @@ These 2 exports routes the pip and uv caches to workspace instead of $HOME.
 
 - `hf download nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16`
 - `hf download nvidia/Llama-3.1-Minitron-4B-Depth-Base`
+- `hf download Qwen/Qwen3-4B`
+- `hf download Qwen/Qwen3.5-4B`
+
 
 ### installed version:
 - vllm= 0.31.0
@@ -46,3 +49,7 @@ These 2 exports routes the pip and uv caches to workspace instead of $HOME.
 - `export HF_HOME=/hnvme/workspace/ihpc170h-pwr_repro/hf_cache` = find the model cache directory
 
 - `module load cuda/13.0.2` = load the  latest cuda module
+
+### Fifth step: run the model
+
+ncu --profile-from-start off --clock-control base --section SpeedOfLight_RooflineChart --section SpeedOfLight_HierarchicalTensorRooflineChart --export prefill.ncu-rep python run_model.py nvidia/Llama-3.1-Minitron-4B-Depth-Base 4096 1
