@@ -52,4 +52,7 @@ These 2 exports routes the pip and uv caches to workspace instead of $HOME.
 
 ### Fifth step: run the model
 
-ncu --profile-from-start off --clock-control base --section SpeedOfLight_RooflineChart --section SpeedOfLight_HierarchicalTensorRooflineChart --export prefill.ncu-rep python run_model.py nvidia/Llama-3.1-Minitron-4B-Depth-Base 4096 1
+`ncu --profile-from-start off --clock-control base --section SpeedOfLight_RooflineChart --section SpeedOfLight_HierarchicalTensorRooflineChart --export prefill.ncu-rep python run_model.py nvidia/Llama-3.1-Minitron-4B-Depth-Base 4096 1`
+
+or run the one of the .sh scripts, e.g. `sbatch profile_prefill.sh`
+
