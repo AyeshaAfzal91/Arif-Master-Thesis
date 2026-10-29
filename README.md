@@ -58,6 +58,8 @@ Please set up an account at matrix.org (should look something like “@m.mouse:m
 3. **GQA** (group query attention)
    - https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Depth-Base
 
+Converting the GQA-ctrl with transMLA: https://github.com/MuLabPKU/TransArch
+
 #### AI Benchmarks from Computer Vision
 - **FLUX1 dev:** https://huggingface.co/black-forest-labs/FLUX.1-dev
 - **ResNet-50:** https://huggingface.co/microsoft/resnet-50
