@@ -22,6 +22,7 @@
 | Student listed on mailing list: hpcplus@fau.de | DONE |
 | Weekly meetings dates (THU, 10 a.m.): calendar invite set-up | DONE |
 | Matrix Room for chat | DONE |
+| Access to HPC systems (Fritz/Alex) at NHR@FAU (Portal: https://portal.hpc.fau.de; login: `ssh -Y ihpcXXXh@fritz.nhr.fau.de`) | DONE |
 
 ### Thesis Timeline
 - **Thesis duration:** Nov – April (flexible) ??
@@ -29,13 +30,6 @@
 - **Thesis Registration:** Nov (flexible) ??
 - **First talk:** Nov/Dec (flexible) ??
 - **Second talk/Thesis:** End-April (flexible) ??
-
-### Access to HPC Systems at NHR@FAU
-- **Alex** (Done)
-  - Portal: https://portal.hpc.fau.de
-  - Login: ssh -Y ihpc171h@alex.nhr.fau.de
-- **Helma** (TODO)
-  - Arif has H100 access only  ⇒ TODO, I’ll get back on that after discussing with the admin
 
 ### Matrix Room for Chat
 Please set up an account at matrix.org (should look something like “@m.mouse:matrix.org”) and send it to me!
@@ -58,7 +52,7 @@ Please set up an account at matrix.org (should look something like “@m.mouse:m
 3. **GQA** (group query attention)
    - https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Depth-Base
 
-Converting the GQA-ctrl with transMLA: https://github.com/MuLabPKU/TransArch
+Converting the GQA-ctrl with transMLA: https://github.com/MuLabPKU/TransArch/tree/main/TransMLA_NeurIPS_2025
 
 #### AI Benchmarks from Computer Vision
 - **FLUX1 dev:** https://huggingface.co/black-forest-labs/FLUX.1-dev
