@@ -1,3 +1,7 @@
 Start-Task/logs/
 Start-Task/errors/
-*.ncu-rep
+Start-Task/report_files/
+Start-Task/roofline_gui_scripts/
+Start-Task/csv_out/
+
+*.sh
