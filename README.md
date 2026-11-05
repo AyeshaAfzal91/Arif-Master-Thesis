@@ -54,10 +54,6 @@ Please set up an account at matrix.org (should look something like “@m.mouse:m
 
 Converting the GQA-ctrl with transMLA: https://github.com/MuLabPKU/TransArch/tree/main/TransMLA_NeurIPS_2025
 
-#### AI Benchmarks from Computer Vision
-- **FLUX1 dev:** https://huggingface.co/black-forest-labs/FLUX.1-dev
-- **ResNet-50:** https://huggingface.co/microsoft/resnet-50
-
 ### Reference Papers (running knobs: freq scaling and power capping)
 - **LLM:** https://arxiv.org/abs/2605.11999
   - Hardware: NVIDIA H200
