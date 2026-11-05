@@ -17,7 +17,7 @@
 ### Status Overview
 | Item | Status |
 |------|--------|
-| Thesis listed on website | TODO (Thesis Initial title: “Energy Efficiency of LLMs and AI Pipelines for Wattlytics Integration”?) |
+| Thesis listed on website | DONE (Thesis Initial title: “Energy Efficiency of Attention Architectures for LLM Training”) |
 | GitHub access |DONE |
 | Student listed on mailing list: hpcplus@fau.de | DONE |
 | Weekly meetings dates (THU, 10 a.m.): calendar invite set-up | DONE |
@@ -28,7 +28,9 @@
 - **Thesis duration:** Nov – April (flexible) ??
 - **Thesis Requirements:** Two talks and a comprehensive written thesis
 - **Thesis Registration:** Nov (flexible) ??
-- **First talk:** Nov/Dec (flexible) ??
+- **First talk:** end-Dec/Jan??
+     -- Start with Roofline figures (Fig. 1, H100, different model)
+     -- What did you do in two months and what you plan for next months
 - **Second talk/Thesis:** End-April (flexible) ??
 
 ### Matrix Room for Chat
@@ -38,11 +40,22 @@ Please set up an account at matrix.org (should look something like “@m.mouse:m
 ---
 
 ## Thesis Context (Integration into Wattlytics)
+-- Training is best for multi-node case and easy as well. (leaving Interference as its complicated and not good for muti-node scalability)
 
 ### Hardware
-- H100/H200 Helma or Testcluster GPUs
+- NVIDIA (H100/H200 Helma or Testcluster B200/B300 GPUs)
+- AMD (Testcluster MI300X GPU)
 
-### Applications (compute-bound and/or memory-bound)
+### Tuning knobs
+-- models
+-- freq scaling DVFS policies
+-- power capping
+
+### Applications (char: compute-bound and/or memory-bound)
+- First plot Roofline and gather energy profiles as done in PPAM paper
+- Library/set-up should be more industry-focused.
+     - Qwen3 from https://github.com/lightning-ai/litgpt: https://arxiv.org/pdf/2505.09388 (same as GQA)
+     - First plot Roofline, gather energy profiles, then playing around with tuning knobs.
 
 #### Three LLMs (focus on dense)
 1. **Mamba2 hybrid** (state space models)
