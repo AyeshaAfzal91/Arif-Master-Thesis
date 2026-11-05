@@ -43,6 +43,8 @@ These 2 exports routes the pip and uv caches to workspace instead of $HOME.
 - cuda= 13.0 
 - python= 3.12.7
 - transformers = 5.17.0
+- matplotlib==3.11.2
+- pandas==3.1.0
 
 ### Fourth step: allocate a node and check the environment
 - `source /hnvme/workspace/ihpc170h-pwr_repro/venv/bin/activate` = activate the venv in the node
@@ -55,4 +57,9 @@ These 2 exports routes the pip and uv caches to workspace instead of $HOME.
 `ncu --profile-from-start off --clock-control base --section SpeedOfLight_RooflineChart --section SpeedOfLight_HierarchicalTensorRooflineChart --export prefill.ncu-rep python run_model.py nvidia/Llama-3.1-Minitron-4B-Depth-Base 4096 1`
 
 or run the one of the .sh scripts, e.g. `sbatch profile_prefill.sh`
+
+
+### Results
+![Roofline Prefill](roofline_out/roofline_prefill.png)
+prefill is memory bound in h100.
 
