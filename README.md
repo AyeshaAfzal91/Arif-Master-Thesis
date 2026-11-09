@@ -7,7 +7,7 @@
 - Document **“summary of changes”** for each **“existing task”** or **“summary of steps”** for each **“new task”** in **“README”**
 - Always commit current results at GitHub
 
-### Student Email
+### Mehmet Arif Bağcı Email
 | Account | Address |
 |---------|---------|
 | FAU     | mehmet.a.bagc@fau.de |
