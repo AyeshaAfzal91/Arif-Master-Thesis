@@ -17,7 +17,7 @@
 ### Status Overview
 | Item | Status |
 |------|--------|
-| Thesis listed on website | DONE (Thesis Initial title: “Energy Efficiency of Attention Architectures for LLM Training”) |
+| Thesis listed on website | DONE |
 | GitHub access |DONE |
 | Student listed on mailing list: hpcplus@fau.de | DONE |
 | Weekly meetings dates (THU, 10 a.m.): calendar invite set-up | DONE |
