@@ -1,0 +1,101 @@
+### Starting TaskPrologue of job 1355387 on h13-02 at Mon Nov 16 03:17:48 PM CET 2026
+Running on cores 64-95 with governor ondemand
+Mon Nov 16 15:17:48 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100                    On  |   00000000:A6:00.0 Off |                    0 |
+| N/A   38C    P0             69W /  500W |       0MiB /  95830MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 30.03it/s]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+/home/hpc/ihpc/ihpc170h/venv_transmla/lib/python3.12/site-packages/triton/knobs.py:504: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 234.11it/s]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+/home/hpc/ihpc/ihpc170h/venv_transmla/lib/python3.12/site-packages/triton/knobs.py:504: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 238.31it/s]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+/home/hpc/ihpc/ihpc170h/venv_transmla/lib/python3.12/site-packages/triton/knobs.py:504: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 33.07it/s]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+/home/hpc/ihpc/ihpc170h/venv_transmla/lib/python3.12/site-packages/triton/knobs.py:504: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 248.23it/s]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+/home/hpc/ihpc/ihpc170h/venv_transmla/lib/python3.12/site-packages/triton/knobs.py:504: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 245.82it/s]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+/home/hpc/ihpc/ihpc170h/venv_transmla/lib/python3.12/site-packages/triton/knobs.py:504: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 238.81it/s]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+/home/hpc/ihpc/ihpc170h/venv_transmla/lib/python3.12/site-packages/triton/knobs.py:504: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+=== JOB_STATISTICS ===
+=== current date     : Mon Nov 16 15:25:30 CET 2026
+= Job-ID             : 1355387 on helma
+= Job-Name           : profile_run_mla.sh
+= Job-Command        : /home/hpc/ihpc/ihpc170h/Arif-Master-Thesis/Start-Task/profile_run_mla.sh
+= Initial workdir    : /home/hpc/ihpc/ihpc170h/Arif-Master-Thesis/Start-Task
+= Queue/Partition    : h100
+= Slurm account      : ihpc with QOS=normal
+= Requested resources: cpu=32,mem=175G,node=1,billing=32,gres/gpu=1,gres/gpu:h100=1 for 23:58:00
+= Elapsed runtime    : 00:07:47
+= Total RAM usage    : 10.2 GiB of assigned 175 GiB (5.8%)
+= Node list          : h13-02
+= Subm/Elig/Start/End: 2026-11-16T15:17:40 / 2026-11-16T15:17:40 / 2026-11-16T15:17:42 / 2026-11-16T15:25:29
+======================
+=== Quota infos ======
+    Path                 Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc              52.4G   104.9G   209.7G        N/A      79K     300K     400K        N/A    
+!!! /hnvme                 60.5G     0.0K     0.0K        N/A      76K      61K      81K  6d23h39m47s !!!
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA H100, 00000000:A6:00.0, 3273894, 3 %, 0 %, 12252 MiB, 31576 ms
+NVIDIA H100, 00000000:A6:00.0, 3274954, 0 %, 0 %, 12250 MiB, 78343 ms
+NVIDIA H100, 00000000:A6:00.0, 3276144, 0 %, 0 %, 12250 MiB, 78225 ms
+NVIDIA H100, 00000000:A6:00.0, 3277697, 1 %, 0 %, 12250 MiB, 51175 ms
+NVIDIA H100, 00000000:A6:00.0, 3292839, 1 %, 0 %, 12250 MiB, 44069 ms
+NVIDIA H100, 00000000:A6:00.0, 3293896, 1 %, 0 %, 12250 MiB, 29741 ms
+NVIDIA H100, 00000000:A6:00.0, 3294880, 1 %, 0 %, 12250 MiB, 24361 ms

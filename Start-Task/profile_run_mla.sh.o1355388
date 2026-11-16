@@ -1,0 +1,48 @@
+### Starting TaskPrologue of job 1355388 on h12-02 at Mon Nov 16 03:17:54 PM CET 2026
+Running on cores 96-127 with governor performance
+Mon Nov 16 15:17:54 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 615.71.09              KMD Version: 615.71.09     CUDA UMD Version: 13.4     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100                    On  |   00000000:C6:00.0 Off |                    0 |
+| N/A   35C    P0             67W /  500W |       0MiB /  95830MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 41.07it/s]
+[2026-11-16T15:18:56.389] error: *** JOB 1355388 ON h12-02 CANCELLED AT 2026-11-16T15:18:56 DUE to SIGNAL Terminated ***
+=== JOB_STATISTICS ===
+=== current date     : Mon Nov 16 15:18:59 CET 2026
+= Job-ID             : 1355388 on helma
+= Job-Name           : profile_run_mla.sh
+= Job-Command        : /home/hpc/ihpc/ihpc170h/Arif-Master-Thesis/Start-Task/profile_run_mla.sh
+= Initial workdir    : /home/hpc/ihpc/ihpc170h/Arif-Master-Thesis/Start-Task
+= Queue/Partition    : h100
+= Slurm account      : ihpc with QOS=normal
+= Requested resources: cpu=32,mem=175G,node=1,billing=32,gres/gpu=1,gres/gpu:h100=1 for 23:58:00
+= Elapsed runtime    : 00:01:05
+= Total RAM usage    : 7.2 GiB of assigned 175 GiB (4.1%)
+= Node list          : h12-02
+= Subm/Elig/Start/End: 2026-11-16T15:17:49 / 2026-11-16T15:17:49 / 2026-11-16T15:17:51 / 2026-11-16T15:18:56
+======================
+=== Quota infos ======
+    Path                 Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc              52.4G   104.9G   209.7G        N/A      79K     300K     400K        N/A    
+!!! /hnvme                 60.5G     0.0K     0.0K        N/A      76K      61K      81K  6d23h46m18s !!!
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA H100, 00000000:C6:00.0, 3526046, 1 %, 0 %, 8188 MiB, 9214 ms

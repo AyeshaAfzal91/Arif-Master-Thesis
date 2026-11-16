@@ -66,3 +66,23 @@ or run the one of the .sh scripts, e.g. `sbatch profile_prefill.sh`
 ![Roofline Prefill](csv_visual_try/roofline_out/roofline_decode.png)
 
 
+### TransMLA
+New environment
+- module load python/3.12-conda
+- python -m venv $HOME/venv_transmla
+
+pip/uv caches to work 
+- export PIP_CACHE_DIR=$HOME/pip_cache
+
+models location
+- export HF_HOME=$WS/hf_cache
+
+required packages 
+- pip install --upgrade pip
+- pip install transformers==4.52.4 datasets "accelerate==1.3.0" datatrove tensorboardX
+
+activate the env
+- source $HOME/venv_transmla/bin/activate
+
+or easily
+- source $HOME/env_transmla.sh
