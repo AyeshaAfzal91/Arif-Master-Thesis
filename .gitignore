@@ -1,7 +1,6 @@
 Start-Task/logs/
 Start-Task/errors/
-Start-Task/report_files/
-Start-Task/roofline_gui_scripts/
 Start-Task/csv_out/
+*.ncu-rep
+Start-Task/old_results/csv_out_vllm/llama_decode_s1024_bs1_raw.csv
 
-*.sh

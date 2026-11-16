@@ -60,6 +60,9 @@ or run the one of the .sh scripts, e.g. `sbatch profile_prefill.sh`
 
 
 ### Results
-![Roofline Prefill](roofline_out/roofline_prefill.png)
-prefill is memory bound in h100.
+![Roofline Prefill](csv_visual_try/roofline_out/roofline_prefill.png)
+
+
+![Roofline Prefill](csv_visual_try/roofline_out/roofline_decode.png)
+
 
