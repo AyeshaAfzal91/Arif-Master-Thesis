@@ -115,3 +115,26 @@ In venv (for Table 1):
  GDN = `sbatch --job-name="energy_gdn" --output="logs/energy_gdn_%j.log" --error="errors/energy_gdn_%j.err" sweep_power_cap.sh "Qwen/Qwen3.5-4B" 1 1024 `
 
  
+ ### litgpt
+ create env
+ - `python -m venv $HOME/venv_litgpt`
+ activate env
+ - `source $HOME/venv_litgpt/bin/activate`
+
+ then
+ - `export PIP_CACHE_DIR=$HOME/pip_cache`
+   `export UV_CACHE_DIR=$HOME/uv_cache`
+   `export HF_HOME=$WS/hf_cache`
+
+install litgpt
+- `pip install litgpt`
+
+to download a model
+- `litgpt download Qwen/Qwen3-4B --checkpoint_dir $WS/litgpt_checkpoints`
+
+the model is saved to $WS/litgpt_checkpoints folder.
+
+create the csv reports
+- `sbatch --job-name=qwen3_prefill profile_run_litgpt.sh qwen3_litgpt /hnvme/workspace/ihpc170h-pwr_repro/litgpt_checkpoints/Qwen/Qwen3-4B prefill`
+
+-`sbatch --job-name=qwen3_decode profile_run_litgpt.sh qwen3_litgpt /hnvme/workspace/ihpc170h-pwr_repro/litgpt_checkpoints/Qwen/Qwen3-4B decode`
