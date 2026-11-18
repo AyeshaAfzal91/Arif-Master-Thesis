@@ -74,6 +74,8 @@ In prefill GEMM kernels sits on the right side of the ridge point. This means co
 
 In decode GEMM kernels sits on the left side of the ridge point. This means memory-bound.
 
+Clock = base = 1584 MHz
+
 
 ### Interim step: TransMLA
 It requires different environment because of the 'Transformers' versions and different package requirements.
