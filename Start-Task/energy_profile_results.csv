@@ -1,0 +1,11 @@
+tag,model_name,prompt_len,out_len,latency_s,throughput_tok_s,energy_mJ,mJ_per_tok,mean_power_w,mean_clock_mhz,num_samples
+cap_280,nvidia/Llama-3.1-Minitron-4B-Depth-Base,1,1024,9.532,107.43,2380864.6,2325.06,251.1,1980,190
+cap_280,Qwen/Qwen3.5-4B,1,1024,30.937,33.10,5473876.1,5345.58,177.2,1980,617
+cap_420,nvidia/Llama-3.1-Minitron-4B-Depth-Base,1,1024,9.531,107.44,2390846.9,2334.81,252.2,1980,190
+cap_500,nvidia/Llama-3.1-Minitron-4B-Depth-Base,1,1024,9.581,106.87,2391408.2,2335.36,250.9,1980,191
+cap_420,Qwen/Qwen3.5-4B,1,1024,31.241,32.78,5509874.4,5380.74,176.7,1980,623
+cap_600,nvidia/Llama-3.1-Minitron-4B-Depth-Base,1,1024,9.532,107.43,2380819.4,2325.02,251.1,1980,190
+cap_700,nvidia/Llama-3.1-Minitron-4B-Depth-Base,1,1024,9.532,107.42,2386718.2,2330.78,251.7,1980,190
+cap_500,Qwen/Qwen3.5-4B,1,1024,31.236,32.78,5513173.4,5383.96,176.8,1980,623
+cap_600,Qwen/Qwen3.5-4B,1,1024,31.290,32.73,5522698.9,5393.26,176.8,1980,624
+cap_700,Qwen/Qwen3.5-4B,1,1024,31.800,32.20,5586214.3,5455.29,176.0,1980,634

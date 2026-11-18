@@ -54,35 +54,62 @@ These 2 exports routes the pip and uv caches to workspace instead of $HOME.
 
 ### Fifth step: run the model
 
-`ncu --profile-from-start off --clock-control base --section SpeedOfLight_RooflineChart --section SpeedOfLight_HierarchicalTensorRooflineChart --export prefill.ncu-rep python run_model.py nvidia/Llama-3.1-Minitron-4B-Depth-Base 4096 1`
+run the script to collect the csv reports
+- `bash submit_all.sh`
 
-or run the one of the .sh scripts, e.g. `sbatch profile_prefill.sh`
+then copy the reports to csv_visual_try folder. Later,
+- `cd csv_visual_try`
+- `python kernel_class_roofline.py llama_decode_s1024_bs_1_raw.csv llama_prefill_s4096_bs1_raw.csv`
+
+Note: do not forget to put the all csv files. The results will be saved to roofline_out folder.
 
 
-### Results
+### Sixth step: Results
 ![Roofline Prefill](csv_visual_try/roofline_out/roofline_prefill.png)
+
+In prefill GEMM kernels sits on the right side of the ridge point. This means compute-bound.
 
 
 ![Roofline Prefill](csv_visual_try/roofline_out/roofline_decode.png)
 
+In decode GEMM kernels sits on the left side of the ridge point. This means memory-bound.
 
-### TransMLA
+
+### Interim step: TransMLA
+It requires different environment because of the 'Transformers' versions and different package requirements.
+
 New environment
-- module load python/3.12-conda
-- python -m venv $HOME/venv_transmla
+- `module load python/3.12-conda`
+- `python -m venv $HOME/venv_transmla`
 
 pip/uv caches to work 
-- export PIP_CACHE_DIR=$HOME/pip_cache
+- `export PIP_CACHE_DIR=$HOME/pip_cache`
 
 models location
-- export HF_HOME=$WS/hf_cache
+- `export HF_HOME=$WS/hf_cache`
 
 required packages 
-- pip install --upgrade pip
-- pip install transformers==4.52.4 datasets "accelerate==1.3.0" datatrove tensorboardX
+- `pip install --upgrade pip`
+- `pip install transformers==4.52.4 datasets "accelerate==1.3.0" datatrove tensorboardX`
 
 activate the env
-- source $HOME/venv_transmla/bin/activate
+- `source $HOME/venv_transmla/bin/activate`
 
 or easily
-- source $HOME/env_transmla.sh
+- `source $HOME/env_transmla.sh`
+
+profile for roofline:
+
+- `sbatch profile_run_mla.sh minitron_mla /hnvme/workspace/ihpc170h-pwr_repro/outputs/minitron-4b-deepseek prefill`
+- `sbatch profile_run_mla.sh minitron_mla /hnvme/workspace/ihpc170h-pwr_repro/outputs/minitron-4b-deepseek decode`
+
+
+
+### Seventh step: Energy Measurements
+In venv (for Table 1):
+
+ GQA-ctr = `sbatch --job-name="energy_gqactrl" --output="logs/energy_gqactrl_%j.log" --error="errors/energy_gqactrl_%j.err" sweep_power_cap.sh "nvidia/Llama-3.1-Minitron-4B-Depth-Base" 1 1024`
+
+ GDN = `sbatch --job-name="energy_gdn" --output="logs/energy_gdn_%j.log" --error="errors/energy_gdn_%j.err" sweep_power_cap.sh "Qwen/Qwen3.5-4B" 1 1024 `
+
+ 
