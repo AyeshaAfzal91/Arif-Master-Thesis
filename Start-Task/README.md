@@ -100,6 +100,21 @@ activate the env
 or easily
 - `source $HOME/env_transmla.sh`
 
+convert
+- `export HF_DATASETS_OFFLINE=1`
+- `python transmla/converter.py \
+    --model-path nvidia/Llama-3.1-Minitron-4B-Depth-Base\
+    --save-path $WS/outputs/minitron-4b-deepseek \
+    --dtype bf16 \
+    --device cuda:0 \
+    --cal-dataset wikitext2 \
+    --cal-nsamples 128 \
+    --freqfold auto \
+    --collapse auto \
+    --qk-mqa-dim 64 \
+    --kv-lora-rank 512 \
+    --ppl-eval-batch-size 4`
+
 profile for roofline:
 
 - `sbatch profile_run_mla.sh minitron_mla /hnvme/workspace/ihpc170h-pwr_repro/outputs/minitron-4b-deepseek prefill`
