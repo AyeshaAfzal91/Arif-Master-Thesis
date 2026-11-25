@@ -48,7 +48,7 @@ Before downloading the models, set the Hugging Face cache location. The followin
 
 ### Models
 
-- GQA (Qwen3-4B): <https://huggingface.co/Qwen/Qwen3-4B> (not sure yet)
+- GQA (Qwen3-4B): <https://huggingface.co/Qwen/Qwen3-4B> 
 - GQA-ctrl (Minitron-4B): <https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Depth-Base>
 - MLA (Minitron-4B): <https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Depth-Base>
 - GDN (Qwen3.5-4B): <https://huggingface.co/Qwen/Qwen3.5-4B>
