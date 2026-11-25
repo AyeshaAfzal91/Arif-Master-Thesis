@@ -2,6 +2,7 @@
 #SBATCH --time=00:58:00
 #SBATCH --gres=gpu:h100:1
 #SBATCH --partition=h100
+#SBATCH --reservation=powercapped-ihpc170h-h100
 #SBATCH --mail-type=END
 #SBATCH --mail-user=mehmet.a.bagc@fau.de
 
@@ -16,8 +17,8 @@ OUT_LEN=$3      # e.g.  1024
 
 for cap in 280 420 500 600 700; do
     echo "=== power cap: ${cap}W ==="
-    nvidia-smi -pl $cap
+    sudo nvidia-smi --power-limit=$cap
     python energy_profile.py "$MODEL" "$PROMPT_LEN" "$OUT_LEN" "cap_${cap}"
 done
+sudo nvidia-smi --power-limit=700
 
-nvidia-smi -pl 700   # sweep bitince varsayilana geri don

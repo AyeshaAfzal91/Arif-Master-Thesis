@@ -64,7 +64,7 @@ def main():
         thread.join() # wait to finish the background thread.
         t1 = time.perf_counter() # t1 is the time when the measurement is done.
 
-    latency_s = t1 - t0 # time taken for the measured run.
+    latency_s = t1 - t0 # time taken for the measured run. time spent for generating 1024 tokens in our case.
 
     energy_mJ = 0.0
     # trapezoidal integration to calculate energy in millijoules.
