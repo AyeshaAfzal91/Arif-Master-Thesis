@@ -79,7 +79,7 @@ Converting the GQA-ctrl with transMLA: https://github.com/MuLabPKU/TransArch/tre
 - Energy implications for multi-GPUs case for DeepSpeed ZeRO and PyTorch FSDP
   - Configure FSDP
   - Look into knobs: like PyTorch compile, Attention implementation (FA2, FA3 for H100/H200, FA4 etc.)
-  - Update scripts according for single to multiple GPUs: how many nodes and check pointings (LitGPT let you find these recipes)
+  - Update scripts according for single to multiple GPUs: how many nodes and check pointings (LitGPT let you find these recipes); go deeper that how much time spent in one GPU for compute and how much time spend waiting for other GPU (for ZeRO, there is very interesting trade-off).
   - Come with results without reservation
 - After these results, Initial presentation: In Dec/Jan
 
