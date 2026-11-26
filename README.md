@@ -76,7 +76,10 @@ Converting the GQA-ctrl with transMLA: https://github.com/MuLabPKU/TransArch/tre
   - AI model: a benchmarking framework with popular deep learning applications from computer vision (image classification and generation) and large language models (continued pre-training and inference) implementing modern methods.
 
 ## Part 1: LLM Training 
-- Energy implications for multi-node case for DeepSpeed ZeRO and PyTorch FSDP
+- Energy implications for multi-GPUs case for DeepSpeed ZeRO and PyTorch FSDP
+  - Configure FSDP
+  - Update scripts according
+  - Come with results
 - After these results, Initial presentation: In Dec/Jan
 
 ## Part 2: Results Integration to Wattlytics
