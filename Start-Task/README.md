@@ -172,6 +172,9 @@ This script creates the CSV files in the same way as `submit_all.sh`. It was wri
 
 ## Seventh step: Energy measurements
 
+### Load the nvml module
+- `pip install nvidia-ml-py`
+
 ### Allocate a node
 
 - `salloc --reservation=powercapped-ihpc170h-h100 --gres=gpu:h100:1 --time=02:00:00`
@@ -260,3 +263,16 @@ In prefill, the GEMM kernels sit on the right side of the ridge point. This mean
 ![Roofline Decode Litgpt](csv_visual_litgpt/roofline_out/roofline_decode.png)
 
 In decode, the GEMM kernels sit on the left side of the ridge point. This means they are memory-bound.
+
+---
+
+## LLM Training
+
+Activate the environment:
+- `source $HOME/venv_litgpt/bin/activate`
+
+Installed modules & libraries:
+- nvidia nvml = 13.615.71
+- litgpt = 0.5.13
+- pytorch-lightning = 2.6.6
+- torch = 2.15.0
