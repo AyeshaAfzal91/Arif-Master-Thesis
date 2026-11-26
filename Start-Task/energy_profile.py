@@ -3,8 +3,6 @@ import time
 import csv
 import os
 import threading
-
-
 import torch
 import pynvml
 from transformers import AutoModelForCausalLM
@@ -25,12 +23,13 @@ def main():
 
     input_ids = torch.full((1, prompt_len), 1000, dtype=torch.long, device="cuda")
     attention_mask = torch.ones_like(input_ids)
+    # this will be required in the future, when several batches will be generated in parallel, but for now, we only generate one batch at a time.
 
     gen_kwargs = dict(
         max_new_tokens=out_len,
         min_new_tokens=out_len,
         do_sample=False,
-        use_cache=True,
+        use_cache=True, # use the past key-value cache. 
     )
 
     pynvml.nvmlInit() # connect to nvml library
@@ -68,6 +67,12 @@ def main():
 
     energy_mJ = 0.0
     # trapezoidal integration to calculate energy in millijoules.
+    # energy=power x time  = joules
+    # j x 1000 = millijoules
+    # samples[1:]= the first value is removed, later with zip, we would have pairs of (t_a, p_a) and (t_b, p_b) for each consecutive sample.
+    # p_a = start power, p_b = end power, t_a = start time, t_b = end time. (t_b - t_a) is the time interval between two samples.
+    # avarage power = 0.5 * (p_a + p_b)
+    # energy = average power * time interval = 0.5 * (p_a + p_b) * (t_b - t_a)
     for (t_a, p_a, _), (t_b, p_b, _) in zip(samples, samples[1:]):
         energy_mJ += 0.5 * (p_a + p_b) * (t_b - t_a) * 1000.0
     
@@ -77,9 +82,9 @@ def main():
     print(f"tag: {tag}")
     print(f"latency: {latency_s:.3f} s")
     print(f"tokens: {out_len}")
-    print(f"throughput: {out_len / latency_s:.2f} tok/s")
-    print(f"energy: {energy_mJ:.1f} mJ")
-    print(f"energy per token: {energy_mJ / out_len:.2f} mJ/tok")
+    print(f"throughput: {out_len / latency_s:.2f} tok/s") # how many tokens per second we generated.
+    print(f"energy: {energy_mJ:.1f} mJ") # energy=power x time
+    print(f"energy per token: {energy_mJ / out_len:.2f} mJ/tok") # energy per token=energy/number of tokens generated.
     print(f"mean power: {mean_power_w:.1f} W")
     print(f"mean sm clock: {mean_clock_mhz:.0f} MHz")
     print(f"power samples collected: {len(samples)}")

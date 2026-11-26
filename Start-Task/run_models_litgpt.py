@@ -21,17 +21,18 @@ def main():
     max_returned_tokens = prompt_len + out_len # max token numbers that model holds (prompt + generated tokens)- required for kv cache
     precision = get_default_supported_precision(training=False)  # bf16-true on H100
 
+    #model building with lightning fabric
     fabric = L.Fabric(devices=1, precision=precision)
 
-    with fabric.init_module(empty_init=True):
+    with fabric.init_module(empty_init=True): # init the tensors without real model weights.
         model = GPT(config)
     with fabric.init_tensor():
-        model.max_seq_length = max_returned_tokens
-        model.set_kv_cache(batch_size=1)
-    model.eval()
-    model = fabric.setup_module(model)
+        model.max_seq_length = max_returned_tokens # max sequence length
+        model.set_kv_cache(batch_size=1) # set the kv cache
+    model.eval()# inference mode.
+    model = fabric.setup_module(model) # move the model to GPU and bf16.
 
-    load_checkpoint(fabric, model, checkpoint_path)
+    load_checkpoint(fabric, model, checkpoint_path)# load the real weights in lit_model.pth.
 
     # fake prompt
     prompt = torch.full((prompt_len,), 1000, dtype=torch.long, device=fabric.device)
