@@ -78,9 +78,9 @@ Converting the GQA-ctrl with transMLA: https://github.com/MuLabPKU/TransArch/tre
 ## Part 1: LLM Training 
 - Energy implications for multi-GPUs case for DeepSpeed ZeRO and PyTorch FSDP
   - Configure FSDP
-  - Update scripts according
-  - Come with results
-  - Without reservation
+  - Look into knobs: like PyTorch compile, Attention implementation (FA2, FA3 for H100/H200, FA4 etc.)
+  - Update scripts according for single to multiple GPUs: how many nodes and check pointings (LitGPT let you find these recipes)
+  - Come with results without reservation
 - After these results, Initial presentation: In Dec/Jan
 
 ## Part 2: Results Integration to Wattlytics
