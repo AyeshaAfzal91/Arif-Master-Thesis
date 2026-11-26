@@ -80,6 +80,7 @@ Converting the GQA-ctrl with transMLA: https://github.com/MuLabPKU/TransArch/tre
   - Configure FSDP
   - Update scripts according
   - Come with results
+  - Without reservation
 - After these results, Initial presentation: In Dec/Jan
 
 ## Part 2: Results Integration to Wattlytics
